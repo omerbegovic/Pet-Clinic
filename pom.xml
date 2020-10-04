@@ -15,7 +15,7 @@
 
     <groupId>com.springProject</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Pet Clinic Spring Project</description>
 
@@ -46,7 +46,7 @@
     <scm>
         <url>https://github.com/omerbegovic/Pet-Clinic</url>
         <connection>scm:git:https://github.com/omerbegovic/Pet-Clinic.git</connection>
-      <tag>pet-clinic-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
