@@ -1,11 +1,11 @@
 package com.springproject.petclinic.controllers;
 
 import com.springproject.petclinic.services.OwnerService;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class OwnerController {
 
     private final OwnerService ownerService;
@@ -19,6 +19,7 @@ public class OwnerController {
 
         model.addAttribute("owners", ownerService.findAll());
 
-        return "owners/index.html";
+        return "owners/index";
+
     }
 }

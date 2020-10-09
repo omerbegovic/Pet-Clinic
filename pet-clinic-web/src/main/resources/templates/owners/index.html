@@ -16,12 +16,13 @@
         <th>Last Name</th>
     </tr>
     </thead>
+
     <tbody>
     <!--/*@thymesVar id="owners" type="com.springproject.petclinic.model.Owner"*/-->
     <tr th:each="owner : ${owners}">
-        <td th:text="${owners.id}">1</td>
-        <td th:text="${owners.firstName}">Joe</td>
-        <td th:text="${owners.lastName}">Buck</td>
+        <td th:text="${owner.id}">{owners.id}</td>
+        <td th:text="${owner.firstName}">Joe</td>
+        <td th:text="${owner?.lastName}">Buck</td>
     </tr>
     </tbody>
 </table>

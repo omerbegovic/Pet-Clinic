@@ -2,8 +2,8 @@ package com.springproject.petclinic.model;
 
 public class Person extends BaseEntity {
 
-    private String firstName;
-    private String lastName;
+    public String firstName;
+    public String lastName;
 
     public String getFirstName(String sam) {
         return firstName;
@@ -19,5 +19,11 @@ public class Person extends BaseEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getName(){
+
+        return this.firstName;
+
     }
 }
