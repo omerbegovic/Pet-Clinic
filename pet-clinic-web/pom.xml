@@ -3,7 +3,7 @@
     <parent>
         <artifactId>pet-clinic</artifactId>
         <groupId>com.springProject</groupId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.springProject</groupId>
             <artifactId>pet-clinic-data</artifactId>
-            <version>0.0.5-SNAPSHOT</version>
+            <version>0.0.5</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
