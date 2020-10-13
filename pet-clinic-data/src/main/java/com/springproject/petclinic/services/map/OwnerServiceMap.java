@@ -5,20 +5,21 @@ import com.springproject.petclinic.model.Pet;
 import com.springproject.petclinic.services.OwnerService;
 import com.springproject.petclinic.services.PetService;
 import com.springproject.petclinic.services.PetTypeService;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@SuppressWarnings("ALL")
 @Service
+@ComponentScan("com.springproject.petclinic.services")
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
-    private final PetTypeService petTypeService;
     private final PetService petService;
+    private final PetTypeService petTypeService;
 
-    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
-        this.petTypeService = petTypeService;
+    public OwnerServiceMap(PetService petService, PetTypeService petTypeService) {
         this.petService = petService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
