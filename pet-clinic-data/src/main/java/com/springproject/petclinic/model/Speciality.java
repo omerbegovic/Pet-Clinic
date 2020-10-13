@@ -1,5 +1,8 @@
 package com.springproject.petclinic.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Speciality extends BaseEntity {
 
     private String description;
