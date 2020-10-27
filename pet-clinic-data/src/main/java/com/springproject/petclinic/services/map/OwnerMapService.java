@@ -5,18 +5,11 @@ import com.springproject.petclinic.model.Pet;
 import com.springproject.petclinic.services.OwnerService;
 import com.springproject.petclinic.services.PetService;
 import com.springproject.petclinic.services.PetTypeService;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.Set;
 
 @Service
-@ComponentScan
-@EnableJpaRepositories
-
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService{
 
     private final PetService petService;
