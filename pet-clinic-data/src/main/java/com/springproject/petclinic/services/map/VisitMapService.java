@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     public final VisitRepository visitRepository;
